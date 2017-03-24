@@ -3,19 +3,9 @@
 <h3>List of Questions</h3>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
-
-<h3> All Answers </h3>
-
-<ul>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.answerer}} - {{answer.content}}</li>
-  {{/each}}
-</ul>
-
-{{new-answer saveAnswer="saveAnswer"}}

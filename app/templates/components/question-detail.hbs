@@ -3,6 +3,14 @@
 <p>
   {{question.detail}}
 </p>
+
+<h3> Answers </h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 <br>
 
 <button {{action 'delete' question}}>Delete</button>

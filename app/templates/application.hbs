@@ -1,11 +1,20 @@
 <div class= "container">
-  <header class= "jumbotron">
-    <h1>Q & A Board</h1>
-  </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        {{#link-to 'index' class='navbar-brand'}}Message Board{{/link-to}}
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <br>
   <!-- 'outlet' is the content -->
-    {{outlet}}
+  {{outlet}}
   <hr>
-  <footer>
-    {{#link-to 'index'}}Home{{/link-to}}
-  </footer>
 </div>

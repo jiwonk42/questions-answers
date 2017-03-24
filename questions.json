@@ -12,10 +12,10 @@
     "detail": "What do you guys want to do for group project?"
   }],
   "answers": [{
-    "author": "Justine",
-    "detail": "I think it's a great movie!"
+    "answerer": "Justine",
+    "content": "I think it's a great movie!"
   }, {
-    "author": "Rebecca",
-    "detail": "Sorry, I don't really have a good answer."
+    "answerer": "Rebecca",
+    "content": "Sorry, I don't really have a good answer."
   }]
 }

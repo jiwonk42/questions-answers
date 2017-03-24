@@ -16,7 +16,6 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
     firebase: {
       apiKey: "AIzaSyDFMG_4pQAP8jmkCpuvJoSFK2uosG_Y33s",
       authDomain: "questions-answers-f0dbd.firebaseapp.com",

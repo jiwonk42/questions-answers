@@ -1,5 +1,27 @@
 body {
+  background-color: #F8F8F8;
   font-size: 20px;
+}
+
+.container {
+  padding: 40px;
+  background-color: white;
+}
+
+.navbar {
+  padding: 30px;
+}
+
+.navbar-brand {
+  font-size: 52px;
+}
+
+.navbar-home {
+  font-size: 30px;
+}
+
+.outlet {
+  margin-left: 30px;
 }
 
 ul li {

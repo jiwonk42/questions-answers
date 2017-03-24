@@ -8,13 +8,15 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li>{{#link-to 'index' class='navbar-home'}}Home{{/link-to}}</li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
   <br>
   <!-- 'outlet' is the content -->
-  {{outlet}}
+  <div class="outlet">
+    {{outlet}}
+  </div>
   <hr>
 </div>

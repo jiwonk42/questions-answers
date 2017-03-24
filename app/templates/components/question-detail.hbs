@@ -1,15 +1,18 @@
 <h1>{{question.title}}</h1>
-<h3>Posted by {{question.author}}</h3>
-<h4>
-  {{question.detail}}
-</h4>
+<h3>- Posted by {{question.author}}</h3>
 <br>
-<button class="btn btn-danger" {{action 'delete' question}}>Delete This Question</button>
+<p>
+  {{question.detail}}
+</p>
+<br>
+<button class="btn btn-danger" {{action 'delete' question}}>Delete</button>
 <br>
 <hr>
-<h3>Reponses</h3>
+<h1>Answers</h1>
+<br>
 <ul>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    <br>
   {{/each}}
 </ul>

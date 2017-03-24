@@ -1,5 +1,5 @@
+<br>
 {{#if updateQuestionForm}}
-  <h4>Update {{question.title}} by {{question.author}}</h4>
   <div>
     <form>
       <div class="form-group">
@@ -16,10 +16,10 @@
         <label for="detail">Detail: </label>
         {{input value=detail id="detail" placeholder=question.detail}}
       </div>
-
-      <button {{action 'update' question}}>Save</button>
+      <br>
+      <button class="btn btn-info" {{action 'update' question}}>Update</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+  <button class="btn btn-warning" {{action 'updateQuestionForm'}}>Update This Question</button>
 {{/if}}
